@@ -53,7 +53,7 @@ export default function Home() {
 				<header className="hidden lg:flex">
 					<FaceIcon className="size-14" />
 				</header>
-				<div className="letter tracking-wider  text-2xl animate-bounce text-balance font-bold text-center p-2 ">
+				<div className="letter tracking-wider  text-2xl  text-balance font-bold text-center p-2 ">
 					<h2>Search for Dish</h2>
 				</div>
 				<div className="logo flex w-full max-w-sm items-center lg:max-w-none lg:w-auto space-x-3">
