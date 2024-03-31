@@ -1,6 +1,4 @@
 import { CalendarIcon } from "@radix-ui/react-icons";
-
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import {
 	HoverCard,
@@ -14,23 +12,19 @@ export function HoverCardDemo(props) {
 			<HoverCardTrigger asChild>
 				<Button
 					variant="link"
-					style={{ width: "200px" }}
+					style={{ maxWidth: "200px", minWidth: "100px" }}
 					className="bg-secondary text-primary"
 				>
 					{props.identify}
 				</Button>
 			</HoverCardTrigger>
-			<HoverCardContent className="w-80">
-				<div className="flex justify-between space-x-4">
-					<div className="space-y-1">
-						<h4 className="text-sm font-semibold">{props.title}</h4>
-						<p className="text-sm">{props.note}</p>
-						<div className="flex items-center pt-2">
-							<CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
-							<span className="text-xs text-muted-foreground">
-								{props.date}
-							</span>
-						</div>
+			<HoverCardContent className="w-full lg:max-w-xs">
+				<div className="space-y-1">
+					<h4 className="text-sm font-semibold">{props.title}</h4>
+					<p className="text-sm">{props.note}</p>
+					<div className="flex items-center pt-2">
+						<CalendarIcon className="mr-2 h-4 w-4 opacity-70" />{" "}
+						<span className="text-xs text-muted-foreground">{props.date}</span>
 					</div>
 				</div>
 			</HoverCardContent>
